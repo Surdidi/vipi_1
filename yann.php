@@ -4,8 +4,8 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <script src="../JavaScript/class/Composant.js"></script>
-    <script src="../JavaScript/class/Vipi.js"></script>
+    <script src="./JavaScript/class/Composant.js"></script>
+    <script src="./JavaScript/class/Vipi.js"></script>
     <script src="JavaScript/class/Obstacle.js"></script>
     <script src="JavaScript/class/Cactus.js"></script>
     <script langage="javascript">
