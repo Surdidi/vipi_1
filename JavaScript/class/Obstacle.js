@@ -1,5 +1,4 @@
 class Obstacle {
-
     constructor(hauteur,largeur,image, position_x, position_y){
       this.hauteur = hauteur;
       this.largeur = largeur;
@@ -8,24 +7,37 @@ class Obstacle {
       this.position_y = position_y ;
     }
 
-    get hauteur(){
+    gethauteur(){
       return this.hauteur ;
     }
 
-    get largeur(){
+    getlargeur(){
       return this.largeur ;
     }
 
-    get image(){
+    getimage(){
       return this.image ;
     }
 
-    function verif_contact(position_x,position_y){
+    sethauteur(hauteur){
+      this.hauteur = hauteur ;
+    }
+
+    setlargeur(largeur){
+      this.largeur = largeur ;
+    }
+
+    setimage(image){
+      this.image = image ;
+    }
+
+    verif_contact(position_x,position_y){
         if(position_x >= this.position_x && position_x <= this.position_x+this.largeur){
             if(position_y <= this.position_y+this.hauteur){
               return true ;
             }
         }
         return false ;
-    }
+      }
+
 }

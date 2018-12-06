@@ -1,12 +1,20 @@
 <html>
   <head>
-    <script type="text/javascript" src="JavaScript/class/mob.js"></script>
+    <script type="text/javascript" src="JavaScript/class/Obstacle.js"></script>
     <script type="text/javascript" src="JavaScript/class/main.js"></script>
   </head>
   <body>
     <p>Welcome to JavaScript</p>
     <form>
-      <input type="button" value="click" onclick="test()"/>
+      <input type="button" value="click" onclick="init()"/>
     </form>
   </body>
 </html>
+<script>
+      function init(){
+        var test = new Obstacle(1,1,1,10,10);
+        alert(test.gethauteur());
+        test.sethauteur(5);
+        alert(test.gethauteur());
+      }
+</script>

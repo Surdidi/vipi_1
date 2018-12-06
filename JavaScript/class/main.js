@@ -1,4 +1,3 @@
-
 function test(){
-  mob = new Mob(0,0,10,10,new Image());
+  var test = new Obstacle(1,1,"test",10,10);
 }
