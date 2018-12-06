@@ -17,5 +17,6 @@
         alert(test.getPosition_x());
         test.setPosition_x(5);
         alert(test.getPosition_x());
+        document.body.appendChild(test.getImage());
       }
 </script>
