@@ -6,9 +6,9 @@ class Obstacle extends Composant {
   verif_contact(position_x, position_y) {
     if(position_x >= this.position_x && position_x <= this.position_x+this.largeur) {
       if(position_y <= this.position_y+this.hauteur) {
-        return true ;
+        return true;
       }
     }
-    return false ;
+    return false;
   }
 }
