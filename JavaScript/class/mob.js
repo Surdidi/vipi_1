@@ -1,18 +1,18 @@
 class Mob {
-  constructor(x, y, width, height, image) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  constructor(position_x, position_y, hauteur, largeur, image) {
+    this.position_x = position_x;
+    this.position_y = position_y;
+    this.width = largeur;
+    this.hauteur = hauteur;
     this.image = image;
   }
 
   getX() {
-    return this.x;
+    return this.position_x;
   }
 
   getY() {
-    return this.y;
+    return this.position_y;
   }
 
   getWidth() {

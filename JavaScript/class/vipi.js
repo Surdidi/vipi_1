@@ -1,11 +1,10 @@
-class Vipi {
-  constructor() {
+class Vipi extends Composant {
+  constructor(position_x, position_y) {
+    super(position_x, position_y, 200, 200, "../../img/totem.png");
     this.vie = 121;
     this.hydratation = 121;
     this.energie = 121;
     this.ch2019 = true;
-    this.image = new Image(200, 200);
-    this.image.src = "../../img/totem.png";
   }
 
   getVie() {
@@ -42,9 +41,5 @@ class Vipi {
     } else {
       this.ch2019 = false;
     }
-  }
-
-  getImage() {
-    return this.image;
   }
 }
