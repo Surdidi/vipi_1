@@ -1,41 +1,42 @@
-class vipi {
+class Vipi {
   constructor() {
     this.vie = 121;
     this.hydratation = 121;
     this.energie = 121;
     this.ch2019 = true;
-    this.image = "../../img/totem.png";
+    this.image = new Image(500, 500);
+    this.image.src = "../../img/totem.png";
   }
 
-  get vie() {
+  getVie() {
     return this.vie;
   }
 
-  set vie(vie) {
-    this.vie = vie;
+  setVie(nouvelle_vie) {
+    this.vie = nouvelle_vie;
   }
 
-  get hydratation() {
+  getHydratation() {
     return this.hydratation;
   }
 
-  set hydratation(hydratation) {
-    this.hydratation = hydratation;
+  setHydratation(nouvelle_hydratation) {
+    this.hydratation = nouvelle_hydratation;
   }
 
-  get energie() {
+  getEnergie() {
     return this.energie;
   }
 
-  set energie(energie) {
-    this.energie = energie;
+  setEnergie(nouvelle_energie) {
+    this.energie = nouvelle_energie;
   }
 
-  get ch2019() {
+  getCh2019() {
     return this.ch2019;
   }
 
-  set bool_ch2019() {
+  changeCh2019() {
     if(this.ch2019 == false) {
       this.ch2019 = true;
     } else {
@@ -43,7 +44,7 @@ class vipi {
     }
   }
 
-  get image() {
+  getImage() {
     return this.image;
   }
 }
