@@ -9,10 +9,9 @@
     <script src="JavaScript/class/Obstacle.js"></script>
     <script src="JavaScript/class/Cactus.js"></script>
     <script langage="javascript">
-    /*
       var vipi = new Vipi(0, 0);
       document.body.appendChild(vipi.getImage());
-    */
+
       var test = new Cactus(1,1,200,200);
       document.body.appendChild(test.getImage());
     </script>
