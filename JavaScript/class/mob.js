@@ -7,11 +7,11 @@ class Mob {
     this.image = image;
   }
 
-  get x() {
+  getX() {
     return this.x;
   }
 
-  get y() {
+  getY() {
     return this.y;
   }
 
@@ -23,7 +23,7 @@ class Mob {
     return this.height;
   }
 
-  get image() {
+  getImage() {
     return this.image;
   }
 }
