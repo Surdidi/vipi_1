@@ -28,7 +28,6 @@ class Composant {
     return this.hauteur ;
   }
 
-
   getLargeur() {
     return this.largeur ;
   }
