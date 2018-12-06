@@ -1,6 +1,6 @@
 class Mob{
   constructor(x,y,width,height,image){
-    this.x = y;
+    this.x = x;
     this.y = y;
     this.width = width;
     this.height = height;
