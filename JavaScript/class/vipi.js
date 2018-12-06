@@ -4,7 +4,7 @@ class Vipi {
     this.hydratation = 121;
     this.energie = 121;
     this.ch2019 = true;
-    this.image = new Image(500, 500);
+    this.image = new Image(200, 200);
     this.image.src = "../../img/totem.png";
   }
 
