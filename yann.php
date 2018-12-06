@@ -6,8 +6,8 @@
   <body>
     <script src="../JavaScript/class/Composant.js"></script>
     <script src="../JavaScript/class/Vipi.js"></script>
-    <script src="JavaScript/class/Obstacle.js"></script>
-    <script src="JavaScript/class/Cactus.js"></script>
+    <script src="../JavaScript/class/Obstacle.js"></script>
+    <script src="../JavaScript/class/Cactus.js"></script>
     <script langage="javascript">
       var vipi = new Vipi(0, 0);
       document.body.appendChild(vipi.getImage());
