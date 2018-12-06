@@ -1,6 +1,6 @@
 class Vipi extends Composant {
   constructor(position_x, position_y) {
-    super(position_x, position_y, 200, 200, ".../img/totem.png");
+    super(position_x, position_y, 200, 200, "../../img/totem.png");
     this.vie = 121;
     this.hydratation = 121;
     this.energie = 121;
