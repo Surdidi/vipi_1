@@ -1,5 +1,5 @@
-class Mob{
-  constructor(x,y,width,height,image){
+class Mob {
+  constructor(x, y, width, height, image) {
     this.x = x;
     this.y = y;
     this.width = width;
@@ -7,27 +7,23 @@ class Mob{
     this.image = image;
   }
 
-
-  get width()
-  {
-    return this.width;
-  }
-  get height()
-  {
-    return this.height;
-  }
-  get x()
-  {
+  get x() {
     return this.x;
   }
-  get y()
-  {
+
+  get y() {
     return this.y;
   }
 
-  get image()
-  {
-    return this.image;
+  getWidth() {
+    return this.width;
   }
 
+  getHeight() {
+    return this.height;
+  }
+
+  get image() {
+    return this.image;
+  }
 }
