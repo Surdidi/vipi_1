@@ -44,4 +44,16 @@ public class Composant {
 	public ImageIcon getImage() {
 		return image;
 	}
+	
+	public boolean veri_touche (Vipi v) {
+		int x = v.getPositionX();
+		int y = v.getPositionY();
+		if(x+v.getLargeur()> this.positionX && x < this.positionX + this.largeur) {
+			if(y+v.getHauteur() < this.positionY) {
+				return true ;
+			}
+		}
+		return false ;
+	}
+	
 }
