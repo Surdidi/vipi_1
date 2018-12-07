@@ -1,10 +1,10 @@
 package Class;
 
-public class Joueurs {
+public class Joueur {
 	private String login;
 	private Integer score;
 	
-	public Joueurs(String login, Integer score) {
+	public Joueur(String login, Integer score) {
 		this.login = login;
 		this.score = score;
 	}
