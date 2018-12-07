@@ -25,6 +25,7 @@ public class GamePanel extends JPanel{
 	public void paint(Graphics g)
 	{
 		g.drawImage(bg,0, 0, this.getWidth(), this.getHeight(),this);
+		Controlleur.player.getImage().paintIcon(this, g, this.getWidth()/2, this.getHeight()-Controlleur.player.getHauteur()-10);
 		for(Object o: Controlleur.terrain )
 		{
 			
