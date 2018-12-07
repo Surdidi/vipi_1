@@ -1,4 +1,4 @@
-package gui;
+package IHM;
 
 import javax.swing.JPanel;
 
