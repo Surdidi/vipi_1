@@ -7,7 +7,7 @@ public class Frame extends JFrame {
 	public Frame()
 	{
 		this.setTitle("Divalto");
-		this.setSize(800,400);
+		this.setSize(1200,800);
 		this.setLocationRelativeTo(null);
 		this.setContentPane(new GamePanel());
 		this.setVisible(true);
