@@ -3,7 +3,7 @@ package Class;
 import java.io.IOException;
 
 public class Vipi extends Composant {
-	private Integer vie = 121;
+	private Integer vie = 3;
 	private Integer hydratation = 121;
 	private Integer energie = 121;
 	private boolean ch2019 = true;
