@@ -6,18 +6,22 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class Composant {
-	private Integer positionX;
+	protected Integer positionX;
 	private Integer positionY;
 	private Integer hauteur;
 	private Integer largeur;
 	private BufferedImage image;
 	
-	public Composant(Integer positionX, Integer positionY, Integer hauteur, Integer largeur, String linkImage) throws IOException {
+	public Composant(Integer positionX, Integer positionY, Integer hauteur, Integer largeur, String linkImage) {
 		this.positionX = positionX;
 		this.positionY = positionY;
 		this.hauteur = hauteur;
 		this.largeur = largeur;
-		this.image = ImageIO.read(getClass().getResource(linkImage));
+		try {
+			this.image = ImageIO.read(getClass().getResource(linkImage));
+		}catch(Exception e) {
+			e.getMessage();
+		}
 	}
 	
 	public Integer getPositionX() {
