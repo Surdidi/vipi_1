@@ -1,5 +1,6 @@
 package IHM;
 
+import Controlleur.Controlleur;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.io.IOException;
@@ -24,6 +25,10 @@ public class GamePanel extends JPanel{
 	public void paint(Graphics g)
 	{
 		g.drawImage(bg,0, 0, this.getWidth(), this.getHeight(),this);
+		for(Object o: Controlleur.terrain )
+		{
+			
+		}
 	}
 
 }
