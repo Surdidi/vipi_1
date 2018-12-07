@@ -10,17 +10,14 @@ public class Serpent extends Mob {
 	}
 	
 	public void déplacement() {
-		int i = 0 ;
 		if(positionX < positionInit) {
 			while(positionX != positionInit + 100) {
-				i++;
 				positionX += 3 ;
 				// a repaint
 			}
 		}
 		else {
 			while(positionX != positionInit - 100) {
-				i++;
 				positionX = positionX - 3 ;
 				// a repaint
 			}
