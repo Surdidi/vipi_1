@@ -1,20 +1,23 @@
 package Class;
 
-import javax.swing.ImageIcon;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Composant {
 	private Integer positionX;
 	private Integer positionY;
 	private Integer hauteur;
 	private Integer largeur;
-	private ImageIcon image;
+	private BufferedImage image;
 	
-	public Composant(Integer positionX, Integer positionY, Integer hauteur, Integer largeur, String linkImage) {
+	public Composant(Integer positionX, Integer positionY, Integer hauteur, Integer largeur, String linkImage) throws IOException {
 		this.positionX = positionX;
 		this.positionY = positionY;
 		this.hauteur = hauteur;
 		this.largeur = largeur;
-		this.image = new ImageIcon(getClass().getResource(linkImage));
+		this.image = ImageIO.read(getClass().getResource(linkImage));
 	}
 	
 	public Integer getPositionX() {
@@ -41,7 +44,7 @@ public class Composant {
 		return largeur;
 	}
 	
-	public ImageIcon getImage() {
+	public BufferedImage getImage() {
 		return image;
 	}
 	

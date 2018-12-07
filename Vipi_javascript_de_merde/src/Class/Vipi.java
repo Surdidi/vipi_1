@@ -1,12 +1,14 @@
 package Class;
 
+import java.io.IOException;
+
 public class Vipi extends Composant {
 	private Integer vie = 121;
 	private Integer hydratation = 121;
 	private Integer energie = 121;
 	private boolean ch2019 = true;
 	
-	public Vipi() {
+	public Vipi() throws IOException {
 		super(0, 0, 200, 200, "../images/totem.png");
 	}
 	
