@@ -1,10 +1,11 @@
 package Controlleur;
 
 import java.io.BufferedReader;
-import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import Class.Joueur;
@@ -14,23 +15,17 @@ public class InitialisationJoueurs {
 	static ArrayList<Joueur> initialisationJoueurs() {
 		ArrayList<Joueur> joueurs = new ArrayList<Joueur>();
 		try {
-		    File f = new File("textfile");
-		    FileReader fr = new FileReader(f);
+			InputStream f = new FileInputStream("Joueurs.txt");
+			InputStreamReader fr = new InputStreamReader(f);
 		    BufferedReader br = new BufferedReader(fr);
 		    
 		    try {
-		        String line = br.readLine();
+	        	String login = null;
+	        	Integer score = null;
 		        
-		        for(int i=0; line != null; i++) {
-		        	String login = null;
-		        	Integer score = null;
-		        	
-		            if(i%2!=0) {
-		            	login = br.readLine();
-		            } else {
-		            	score = Integer.parseInt(br.readLine());
-		            	joueurs.add(new Joueur(login, score));
-		            }
+		        while((login = br.readLine()) != null) {
+		        	score = Integer.parseInt(br.readLine());
+		        	joueurs.add(new Joueur(login, score));
 		        }
 		        
 		        br.close();
