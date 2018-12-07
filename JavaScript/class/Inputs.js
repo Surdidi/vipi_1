@@ -7,4 +7,7 @@ document.addEventListener('keydown', function(event) {
     else if(event.keyCode == 39) {
         key_right();
     }
+    else if(event.keyCode == 32) {
+        key_space();
+    }
 });
