@@ -1,7 +1,6 @@
 package Class;
 
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -19,7 +18,7 @@ public class Composant {
 		this.largeur = largeur;
 		try {
 			this.image = ImageIO.read(getClass().getResource(linkImage));
-		}catch(Exception e) {
+		} catch(Exception e) {
 			e.getMessage();
 		}
 	}
@@ -62,5 +61,4 @@ public class Composant {
 		}
 		return false ;
 	}
-	
 }

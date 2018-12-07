@@ -11,8 +11,4 @@ public class Obstacle extends Composant {
 		}*/
 		super(positionX,positionY,hauteur,largeur,link);
 	}
-	
-
-
 }
-
