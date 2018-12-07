@@ -42,4 +42,5 @@ class Vipi extends Composant {
       this.ch2019 = false;
     }
   }
+
 }
