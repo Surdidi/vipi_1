@@ -17,9 +17,6 @@
     <script src="../JavaScript/class/Serpent.js"></script>
     <script langage="javascript">
 
-      var background = new Background(document.documentElement.clientWidth/2,document.documentElement.clientWidth.);
-      document.body.appendChild(background.getImage());
-
       var vipi = new Vipi(0, 0);
       document.body.appendChild(vipi.getImage());
 
