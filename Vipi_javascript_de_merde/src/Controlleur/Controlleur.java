@@ -34,7 +34,26 @@ public class Controlleur {
 			if( System.currentTimeMillis() > timer+20)
 			{
 				timer = System.currentTimeMillis();
-				
+				if(player.motionX > 0)
+				{
+					player.setPositionX(player.getPositionX()+1);
+					player.motionX-=1;
+				}
+				if(player.motionX < 0)
+				{
+					player.setPositionX(player.getPositionX()-1);
+					player.motionX+=1;
+				}
+				if(player.motionY > 0)
+				{
+					player.setPositionY(player.getPositionY()+1);
+					player.motionY-=1;
+				}
+				if(player.motionY == 0)
+				{
+					player.setPositionY(player.getPositionY()-1);
+					
+				}
 				if(frame != null)
 					frame.repaint();
 
